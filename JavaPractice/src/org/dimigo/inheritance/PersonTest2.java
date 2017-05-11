@@ -19,17 +19,18 @@ public class PersonTest2 {
 	 */
 	public static void main(String[] args) {
 
-		Person p = new Person();
-		p.setName("Tom");
-		Person k = new Korean("홍길동");
-		Person j = new Japanese("다나카");
-		Person c = new Chinese("왕밍");
+		Person[] per = {
+			new Person("Tom"),
+			new Korean("홍길동"),
+			new Japanese("다나카"),
+			new Chinese("왕밍"),
+			
+		};
 		
-		PersonTest2.greeting(p);
-		PersonTest2.greeting(k);
-		PersonTest2.greeting(j);
-		PersonTest2.greeting(c);
-		
+		for (Person pp : per){
+			
+			PersonTest2.greeting(pp);
+		}
 	}
 
 	private static void greeting(Person p){

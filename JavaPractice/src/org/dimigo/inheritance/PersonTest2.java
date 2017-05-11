@@ -28,8 +28,7 @@ public class PersonTest2 {
 		};
 		
 		for (Person pp : per){
-			
-			PersonTest2.greeting(pp);
+			greeting(pp);
 		}
 	}
 

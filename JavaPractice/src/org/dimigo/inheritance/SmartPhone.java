@@ -42,7 +42,7 @@ public class SmartPhone {
 		
 	}
 	public String toString(){
-		return "모델명 : "+model+", 제조사 : "+company+", 가격"+String.format("%,d",price);
+		return "모델명 : "+model+", 제조사 : "+company+", 가격 : "+String.format("%,d",price)+"원";
 	}
 
 

@@ -15,7 +15,7 @@ package org.dimigo.inheritance;
 public class SmartPhoneTest {
 	public static void main(String[] args) {
 		SmartPhone[] phones = {
-			new IPhone("iPhone7","애플",900000),	
+			new IPhone("iPhone 7","애플",900000),	
 			new Galaxy("갤럭시 S8","삼성",800000)
 		};
 		for(SmartPhone tmp : phones){

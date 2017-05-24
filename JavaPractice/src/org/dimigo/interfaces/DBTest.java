@@ -15,18 +15,15 @@ package org.dimigo.interfaces;
 public class DBTest {
 
 	public static void main(String[] args) {
-		IDBManager[] managers = {
-				new OracleDB(),
-				new SybaseDB()
-		};
-	
-	
-		System.out.println("<< 변경 전 >>");
-		DBTest.crud(managers[0]);
 		
+	
+		IDBManager s = IDBManager.getDBObject("SYBASE");
+		System.out.println("<< 변경 전 >>");
+		DBTest.crud(s);
 		System.out.println();
+		IDBManager o = IDBManager.getDBObject("ORACLE");
 		System.out.println("<< 변경 후 >>");
-		DBTest.crud(managers[1]);
+		DBTest.crud(o);
 		
 		
 	}

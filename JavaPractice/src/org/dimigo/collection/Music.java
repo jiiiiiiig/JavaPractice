@@ -22,8 +22,8 @@ public class Music {
 	}
 
 	/**
-	 * @return the title
-	 */
+	 * @return the titlee
+	 */ 
 	public String getTitle() {
 		return title;
 	}
